@@ -28,19 +28,22 @@ main =
         [ Html.h1
             []
             [ Html.text "My laptop" ]
-        , Html.ul
+        , Html.div
             []
-            [ Html.li
+            [ Html.ul
                 []
-                [ Html.text ("Ram: " ++ .ram myLaptop ++ "\"") ]
-            , Html.li
-                []
-                [ Html.text ("Modelo: " ++ .model myLaptop) ]
-            , Html.li
-                []
-                [ Html.text ("Marca: " ++ .brand myLaptop) ]
-            , Html.li
-                []
-                [ Html.text ("Pulgadas: " ++ .screenSize myLaptop) ]
+                [ Html.li
+                    []
+                    [ Html.text ("Ram: " ++ .ram myLaptop) ]
+                , Html.li
+                    []
+                    [ Html.text ("Modelo: " ++ .model myLaptop) ]
+                , Html.li
+                    []
+                    [ Html.text ("Marca: " ++ .brand myLaptop) ]
+                , Html.li
+                    []
+                    [ Html.text ("Pulgadas: " ++ .screenSize myLaptop) ]
+                ]
             ]
         ]
